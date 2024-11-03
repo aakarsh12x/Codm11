@@ -1,16 +1,26 @@
-// src/components/TypesOfJobs.js
 import React from 'react';
-import './TypesOfJobs.css'; // Make sure to style and add animations in CSS or use libraries like Framer Motion
+import './TypesOfJobs.css'; // Ensure animations and styling in CSS
+
+const jobTypes = [
+  { label: 'Full-Time', icon: '💼' },
+  { label: 'Part-Time', icon: '⏳' },
+  { label: 'Remote', icon: '🏠' },
+  { label: 'Freelance', icon: '🌐' },
+];
 
 const TypesOfJobs = () => {
   return (
     <section className="types-of-jobs">
       <h2>Types of Jobs</h2>
       <div className="job-cards">
-        <div className="job-card">Full-Time</div>
-        <div className="job-card">Part-Time</div>
-        <div className="job-card">Remote</div>
-        <div className="job-card">Freelance</div>
+        {jobTypes.map((job, index) => (
+          <div className="job-card" key={index}>
+            <span className="job-icon" role="img" aria-label={job.label}>
+              {job.icon}
+            </span>
+            <p>{job.label}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
