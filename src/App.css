@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+/* src/components/TypesOfJobs.css */
+.types-of-jobs {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.job-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.job-card {
+  padding: 1.5rem;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.job-card:hover {
+  transform: scale(1.1);
+}
+
+/* src/components/Internships.css */
+.internships {
+  padding: 2rem;
+  background-color: #eef;
+  text-align: center;
+}
+
+.internship-card {
+  padding: 1.5rem;
+  background-color: #cce;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

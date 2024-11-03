@@ -1,0 +1,44 @@
+/* src/components/Internships.css */
+
+.internships {
+    padding: 3rem 1rem;
+    background-color: #a0a6b3; /* Lighter dark background */
+    text-align: center;
+    color: #f7fafc; /* Very light text color */
+  }
+  
+  .internships h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #edf2f7; /* Slightly lighter text color for the header */
+  }
+  
+  .internship-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .internship-card {
+    background-color: #4a5568; /* Medium gray card color */
+    color: #f7fafc; /* Light text color for readability */
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    min-width: 150px;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .internship-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background-color: #718096; /* Lighter shade on hover */
+  }
+  
+  .internship-card:active {
+    transform: scale(0.98);
+  }
+  

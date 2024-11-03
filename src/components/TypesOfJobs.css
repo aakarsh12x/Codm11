@@ -1,0 +1,43 @@
+/* src/components/TypesOfJobs.css */
+
+.types-of-jobs {
+    padding: 3rem 1rem;
+    background-color: #97adbb;
+    text-align: center;
+  }
+  
+  .types-of-jobs h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .job-card {
+    background-color: #e0e0e0;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #333;
+    min-width: 150px;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background-color: #d1d1d1;
+  }
+  
+  .job-card:active {
+    transform: scale(0.98);
+  }
+  
